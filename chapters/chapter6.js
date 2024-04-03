@@ -74,8 +74,8 @@ document.write(color+'<br>')
 
 // c. Add two more color to the beginning of the array.
 // Display the updated array in your browser.
-// color.slice(-1,3,'Pistachio')
-// document.write(color+'<br>')
+color.splice(0,0,'Orange','Pistachio')
+document.write(color+'<br>')
 
 // d. Delete the first color in the array. Display the updated
 // array in your browser.
@@ -92,15 +92,17 @@ document.write(color+'<br>')
 // & color name. Then add the color to desired
 // position/index. . Display the updated array in your
 // browser.
-// var newColor = 'yellow'
-// color.
-// document.write(color+'<br>')
+
+color.splice(2,1,'yellow')
+document.write(color+'<br>')
 
 // g. Ask the user at which index he/she wants to delete
 // color(s) & how many colors he/she wants to delete. Then
 // remove the same number of color(s) from user-defined
 // position/index. . Display the updated array in your
 // browser.
+color.splice(2,1,)
+document.write(color+'<br>')
 
 // 10. Write a program to store student scores in an array &
 // sort the array in ascending order using Array’s sort
@@ -112,3 +114,24 @@ for (let i = 0; i < studentScore.length; i++) {
    var res = studentScore[i]
     document.write(res)
 }
+
+// 11. Write a program to initialize an array with city names.
+// Copy 3 array elements from cities array to selectedCities
+// array.
+
+var cityName = ['Karachi ','Lahore ','Hyderabad ','Quetta ','Islamabad ','Faisalabad ']
+document.write('<br>'+ cityName)
+
+var selectedCities = cityName.slice(2,4)
+document.write('<br>'+ selectedCities)
+
+// 12. Write a program to create a single string from the
+// below mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// (Use array’s join method)
+
+var cat = ['This','is','my','cat']
+document.write(`<h4>ARRAY:</h4>` + cat)
+
+var cats = cat.join(' ')
+document.write(`<h4>STRING:</h4>` + cats)
