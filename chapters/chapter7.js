@@ -50,18 +50,50 @@ document.write('result is '+ result + `<br>`)
 
 document.write('_______________________________________________'+ `<br></br>`)
 
-// var userInput = prompt('Enter your name')
-// document.write('Greet the '+ userInput+ `<br>`)
+// 3. Write a program that takes input a name from user &
+// greet the user.
+
+var userInput = prompt('Enter your name')
+document.write('Greet the '+ userInput+ `<br>`)
 
 document.write('_______________________________________________'+ `<br></br>`)
 
+// 5. Write a program to take input a number from user &
+// display it’s multiplication table on your browser. If user
+// does not enter a new number, multiplication table of 5
+// should be displayed by default.
+
 var Table = +prompt('Enter number which you want table')
-for (let index = 1; index < 11; index++) {
+var table = 5
+
+ for (let index = 1; index < 11; index++) {
+    if (Table === 0) {
+        var cas = document.write(table + ' x ' + index + ' = '+ table*index + '<br>')
+        
+       }
     if (Table > 1) {
-        document.write(Table + ' x ' + index + ' = '+ Table*index + '<br>')
-    } else {
-        alert('Enter the value 2,3,4.........')
+       var cas2 = document.write(Table + ' x ' + index + ' = '+ Table*index + '<br>')
+
     }
     
-}
+     
+  }
 
+document.write('_______________________________________________'+ `<br></br>`)
+
+// 6. Take
+// a) Take three subjects name from user and store them in 3
+// different variables.
+// b) Total marks for each subject is 100, store it in another
+// variable.
+// c) Take obtained marks for first subject from user and
+// stored it in different variable.
+// d) Take obtained marks for remaining 2 subjects from user
+// and store them in variables.
+// e) Now calculate total marks and percentage and show the
+// result in browser like this.(Hint: user table)
+
+
+var userTable = (`<table><tr><td style='font-weight:bold'>Subject </td><td style='font-weight:bold'>Total Marks </td><td style='font-weight:bold'>Obtained Marks </td><td style='font-weight:bold'>Percentage</td></tr><tr><td>English</td><td>100</td><td>54</td><td>54%</td></tr><tr><td>Math</td><td>100</td><td>54</td><td>54%</td></tr><tr><td>Urdu</td><td>100</td><td>48</td><td>48%</td></tr><tr><td><h4></h4></td><td><h4 style="text-align:center;margin-top:-1px">300</h4></td><td><h4 style="text-align:center;margin-top:-1px">156</h4></td><td><h4 style="text-align:center;margin-top:-1px">52%</h4></td></tr></table>`)
+
+document.write(userTable)
