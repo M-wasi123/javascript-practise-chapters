@@ -24,7 +24,21 @@ document.write('Current Day: '+ currentDay + '<br><br>')
 
 let currentDate = new Date().getDate();
 if (currentDate < 16) {
-    document.write('First fifteen days of the month')
+    document.write('First fifteen days of the month'+'<br><br>')
 }else{
-    document.write('Last days of the month')
+    document.write('Last days of the month'+'<br><br>')
 }
+
+// 6. Write a program that determines the minutes since
+// midnight, Jan. 1, 1970 and assigns it to a variable that
+// hasn't been declared beforehand. Use any variable you like
+// to represent the Date object.
+
+let curentDate = new Date();
+let milliseconds = new Date('1970').getMilliseconds();
+let minutes = new Date('').getMonth();
+
+document.write('Current Date: '+ curentDate +'<br><br>')
+document.write('Elapsed milliseconds since January 1 , 1970: '+ milliseconds +'<br><br>')
+document.write('Elapsed minutes since January 1 , 1970: '+ minutes +'<br><br>')
+
