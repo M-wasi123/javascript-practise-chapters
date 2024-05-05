@@ -36,7 +36,7 @@ if (currentDate < 16) {
 
 let curentDate = new Date();
 let milliseconds = new Date().getTime();
-let minutes = new Date().getTime();
+let minutes = milliseconds / (1000 * 60);
 
 
 document.write('Current Date: '+ curentDate +'<br><br>')
