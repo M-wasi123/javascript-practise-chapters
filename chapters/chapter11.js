@@ -35,8 +35,9 @@ if (currentDate < 16) {
 // to represent the Date object.
 
 let curentDate = new Date();
-let milliseconds = new Date('1970').getMilliseconds();
-let minutes = new Date('').getMonth();
+let milliseconds = new Date().getTime();
+let minutes = new Date().getTime();
+
 
 document.write('Current Date: '+ curentDate +'<br><br>')
 document.write('Elapsed milliseconds since January 1 , 1970: '+ milliseconds +'<br><br>')
