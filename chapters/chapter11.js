@@ -43,3 +43,13 @@ document.write('Current Date: '+ curentDate +'<br><br>')
 document.write('Elapsed milliseconds since January 1 , 1970: '+ milliseconds +'<br><br>')
 document.write('Elapsed minutes since January 1 , 1970: '+ minutes +'<br><br>')
 
+// 7. Write a program that tests whether it's before noon and
+// alert “Its AM” else “its PM”.
+
+let userTime = new Date().getHours();
+if (userTime < 13) {
+    document.write("It's AM")
+} else {
+    document.write("It's PM") 
+}
+
